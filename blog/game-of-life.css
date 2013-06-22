@@ -1,0 +1,33 @@
+#board-creator, #board-canvas, #generation-counter-wrapper {
+	float: left;
+}
+
+#board-creator, #generation-counter-wrapper {
+	width: 200px;
+}
+	#board-creator .seed-button {
+		display: block;
+		margin: auto;
+		margin-top: 10px;
+		width: 75px;
+		padding: 5px;
+	}
+	#board-creator #play {
+		margin-top: 40px;
+	}
+
+#board-canvas {
+	margin-bottom: 100px;
+}
+
+@media (max-width: 920px) {	
+	#board-creator .seed-button {
+		width: 85px;
+	}
+	#board-canvas {
+		margin-bottom: 0;
+	}
+	#generation-counter-wrapper {
+		visibility: hidden;
+	}
+}

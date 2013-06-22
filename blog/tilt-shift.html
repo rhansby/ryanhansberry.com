@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Tilt Shift with CSS | Ryan Hansberry</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script type="text/javascript" src="//use.typekit.net/san3qvs.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+		<link rel="stylesheet" href="../css/normalize.min.css">
+		<link rel="stylesheet" href="../css/boilerplate.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/blog.css">
+		<link rel="stylesheet" type="text/css" href="tilt-shift.css">
+		
+		<script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">
+				You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
+				or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> 
+				to improve your experience.
+			</p>
+		<![endif]-->
+		
+		<div id="container">
+			<header>
+				<h1>Ryan Hansberry</h1>
+				<h2><span class="bracer">{</span> student <span class="amp">&amp;</span> web developer <span class="bracer">}</span></h2>
+			</header>
+				
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../work.html">Work</a></li>
+					<li><a href="../blog.html" class="active">Blog</a></li>
+					<li><a href="../about.html">About</a></li>
+				</ul>
+			</nav>
+			
+			<div id="main">
+				<h4>March 29, 2013</h4>
+				<h3>Tilt Shift with CSS</h3>
+				<hr>
+				
+				<div class="article-pic" id="tilt-shift">
+				</div>
+				
+				<p>
+					I love tilt shift photography. I decided I want to make a few faux shots of my own (with photos I took over
+					the past year), but with only CSS.
+				</p>
+				
+				<p>
+					This effect is only supported in Chrome and Safari :(
+				</p>
+				
+				<p>
+					Hover over each photo to reveal the original.
+				</p>
+				
+				<div class="pic-row">
+					<div class="ts-pic-wrapper" id="mountain-man">
+						<img class="ts-pic" src="tilt-shift/mountain-man.jpg">
+						<p>Palm Desert</p>
+					</div>
+					
+					<div class="ts-pic-wrapper" id="cactus">
+						<img class="ts-pic" src="tilt-shift/cactus.jpg">
+						<p>Cactus at Joshua Tree National Park</p>
+					</div>
+				</div>
+				
+				<div class="pic-row">
+					<div class="ts-pic-wrapper" id="powell">
+						<img class="ts-pic" src="tilt-shift/powell.jpg">
+						<p>Powell Library at UCLA</p>
+					</div>
+					
+					<div class="ts-pic-wrapper" id="plaza">
+						<img class="ts-pic" src="tilt-shift/plaza.jpg">
+						<p>Bruin Plaza at UCLA</p>
+					</div>
+				</div>
+				
+				<div class="pic-row last">
+					<div class="ts-pic-wrapper" id="ups-truck">
+						<img class="ts-pic" src="tilt-shift/ups.jpg">
+						<p>UPS Truck in Bellevue, WA</p>
+					</div>
+					
+					<div class="ts-pic-wrapper" id="cars">
+						<img class="ts-pic" src="tilt-shift/cars.jpg">
+						<p>Parking Lot at Santa Monica</p>
+					</div>
+				</div>
+				<hr>
+				
+				<p>
+					It's definitely crazy how far CSS has come to be able to do this in just a few lines of code!
+				</p>
+			</div>
+			
+			<div id="push">
+				<!--Sticky footer hackery-->
+			</div>
+		</div>
+		
+		<footer>
+			&copy; 2013, Ryan Hansberry
+			<br>
+			reach me at <a href="mailto:rhansby@gmail.com">rhansby@gmail.com</a>
+		</footer>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		
+		<script src="../js/plugins.js"></script>
+		<script src="../js/main.js"></script>
+	</body>
+</html>

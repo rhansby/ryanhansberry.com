@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Game of Life | Ryan Hansberry</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script type="text/javascript" src="//use.typekit.net/san3qvs.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+		<link rel="stylesheet" href="../css/normalize.min.css">
+		<link rel="stylesheet" href="../css/boilerplate.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/blog.css">
+		<link rel="stylesheet" type="text/css" href="game-of-life.css">
+		
+		<script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">
+				You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
+				or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> 
+				to improve your experience.
+			</p>
+		<![endif]-->
+		
+		<div id="container">
+			<header>
+				<h1>Ryan Hansberry</h1>
+				<h2><span class="bracer">{</span> student <span class="amp">&amp;</span> web developer <span class="bracer">}</span></h2>
+			</header>
+				
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../work.html">Work</a></li>
+					<li><a href="../blog.html" class="active">Blog</a></li>
+					<li><a href="../about.html">About</a></li>
+				</ul>
+			</nav>
+			
+			<div id="main">
+				<h4>March 26, 2013</h4>
+				<h3>Conway's Game of Life</h3>
+				<hr>
+				
+				<div class="article-pic" id="game-of-life-pic">
+				</div>
+				
+				<p>
+					I recently wanted to make a small game, and also use Canvas, so I hacked this together
+					in a few hours, using the awesome <a href="http://www.createjs.com/#!/EaselJS">Easel.js</a>.
+				</p>
+				<p>
+					You can learn more about Conway's Game of Life on <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Wikipedia</a>.
+				</p>
+				
+				<h4>How to Play</h4>
+				<p>
+					Click on cells to either "bring them to life" or "kill them" in order to create a seed. Alternatively,
+					you can choose a default or random seed from the options on the left. When you're satisfied with
+					the seed, click the Start button.
+				</p>
+				<hr>
+				
+				<div id="board-creator">
+					<h4>Default Seeds</h4>
+					<button class="seed-button" id="seed-1">Seed 1</button>
+					<button class="seed-button" id="seed-2">Seed 2</button>
+					<button class="seed-button" id="seed-3">Seed 3</button>
+					
+					<button class="seed-button" id="play">Start</button>
+					<button class="seed-button" id="reset">Reset</button>
+				</div>
+				
+				<canvas id="board-canvas" width="500" height="500"></canvas>
+				
+				<div id="generation-counter-wrapper">
+					<h4>Generation:</h4>
+					<h3 id="generation-counter">0</h3>
+				</div>
+			</div>
+			
+			<div id="push">
+				<!--Sticky footer hackery-->
+			</div>
+		</div>
+		
+		<footer>
+			&copy; 2013, Ryan Hansberry
+			<br>
+			reach me at <a href="mailto:rhansby@gmail.com">rhansby@gmail.com</a>
+		</footer>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		
+		<script src="../js/plugins.js"></script>
+		<script src="../js/main.js"></script>
+		
+		<script type="text/javascript" src="easeljs/src/easeljs/utils/UID.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/geom/Matrix2D.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/events/EventDispatcher.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/display/DisplayObject.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/display/Container.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/display/Stage.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/events/MouseEvent.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/display/Shape.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/display/Graphics.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/utils/Ticker.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/display/SpriteSheet.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/display/BitmapAnimation.js"></script>
+		<script type="text/javascript" src="easeljs/src/easeljs/geom/Rectangle.js"></script>
+		
+		<script type="text/javascript" src="game-of-life.js"></script>
+	</body>
+</html>

@@ -1,0 +1,103 @@
+.pic-row {
+	clear: both;
+	margin: auto;
+	height: 400px;
+}
+	.pic-row.last {
+		margin-bottom: 80px;
+	}
+
+.ts-pic-wrapper, img.ts-pic {
+	width: 400px;
+	height: 400px;
+}
+
+.ts-pic-wrapper {
+	float: left;
+	
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	
+	border: 12px solid white; /*shake it like a polaroid*/
+	-webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+	        box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+	        
+	margin: 20px 0 50px 20px;
+}
+	.ts-pic-wrapper:last-child {
+		margin-left: 30px;
+	}
+	.ts-pic-wrapper p {
+		text-align: center;
+		font-size: 12pt !important;
+		color: #444;
+		padding-top: 25px; /*hacky, but works*/
+	}
+		.ts-pic-wrapper p:hover {
+			cursor: text;
+		}
+
+.ts-pic-wrapper:hover {
+	cursor: pointer;
+}
+	.ts-pic-wrapper:hover img.ts-pic {
+		-webkit-filter: blur(0px) !important;
+	}
+
+.ts-pic-wrapper#mountain-man {
+	background: url("tilt-shift/mountain-man.jpg");
+}
+	.ts-pic-wrapper#mountain-man img.ts-pic {
+		-webkit-filter: blur(2px);
+		-webkit-mask-box-image: -webkit-linear-gradient(black 50%, transparent 75%, transparent 75%, black 85%);
+	}
+.ts-pic-wrapper#cactus {
+	background: url("tilt-shift/cactus.jpg");
+}
+	.ts-pic-wrapper#cactus img.ts-pic {
+		-webkit-filter: blur(2px);
+		-webkit-mask-box-image: -webkit-linear-gradient(black 10%, transparent 25%, transparent 70%, black 90%);
+	}
+
+.ts-pic-wrapper#powell {
+	background: url("tilt-shift/powell.jpg");
+}
+	.ts-pic-wrapper#powell img.ts-pic {
+		-webkit-filter: blur(3px);
+		-webkit-mask-box-image: -webkit-linear-gradient(black 5%, transparent 40%, transparent 60%, black 80%);
+	}
+.ts-pic-wrapper#plaza {
+	background: url("tilt-shift/plaza.jpg");
+}
+	.ts-pic-wrapper#plaza img.ts-pic {
+		-webkit-filter: blur(2px);
+		-webkit-mask-box-image: -webkit-linear-gradient(black 40%, transparent 60%, transparent 70%, black 80%);
+	}
+
+.ts-pic-wrapper#ups-truck {
+	background: url("tilt-shift/ups.jpg");
+}
+	.ts-pic-wrapper#ups-truck img.ts-pic {
+		-webkit-filter: blur(2px);
+		-webkit-mask-box-image: -webkit-linear-gradient(black 30%, transparent 45%, transparent 75%, black 95%);
+	}
+.ts-pic-wrapper#cars {
+	background: url("tilt-shift/cars.jpg");
+}
+	.ts-pic-wrapper#cars img.ts-pic {
+		-webkit-filter: blur(2px);
+		-webkit-mask-box-image: -webkit-linear-gradient(black 45%, transparent 65%, transparent 73%, black 80%);
+	}
+
+@media (max-width: 920px) {
+	.pic-row {
+		clear: both;
+		margin: 0 auto !important;
+		width: 400px;
+	}
+	
+	.ts-pic-wrapper {
+		margin: 20px auto !important;
+	}
+}
