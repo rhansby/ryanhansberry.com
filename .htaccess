@@ -1,0 +1,12 @@
+#php_value max_execution_time 6000000
+
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+
+# Let me use PHP in an HTML file:
+AddType application/x-httpd-php .html .htm
+AddHandler application/x-httpd-php .html .htm
+
+#Options All -Indexes # prevent access to folders
+ErrorDocument 404 /404.html
+
