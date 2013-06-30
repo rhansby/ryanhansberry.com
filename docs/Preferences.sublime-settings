@@ -1,0 +1,35 @@
+{
+    "theme": "Soda Dark.sublime-theme",
+    "color_scheme": "Packages/Dayle Rees Color Schemes/Darkside.tmTheme",
+
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+
+    "trailing_spaces_include_current_line": false,
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+    "draw_white_space": "selection",
+
+    "font_size": 11.0,
+    "font_options":
+    [
+    "subpixel_antialias"
+    ],
+
+    "highlight_active_indent_guide": true,
+    "highlight_line": false,
+
+    "line_padding_bottom": 2,
+    "line_padding_top": 2,
+
+    "bold_folder_labels": true,
+    "caret_style": "smooth",
+
+    "detect_slow_plugins": false,
+
+    "ignored_packages":
+    [
+        "Vintage"
+    ]
+}
+
