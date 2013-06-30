@@ -60,10 +60,10 @@
         -webkit-mask-box-image: -webkit-linear-gradient(black 10%, transparent 25%, transparent 70%, black 90%);
     }
 
-.ts-pic-wrapper#powell {
-    background: url("tilt-shift/powell.jpg");
+.ts-pic-wrapper#moore {
+    background: url("tilt-shift/moore.jpg");
 }
-    .ts-pic-wrapper#powell img.ts-pic {
+    .ts-pic-wrapper#moore img.ts-pic {
         -webkit-filter: blur(3px);
         -webkit-mask-box-image: -webkit-linear-gradient(black 5%, transparent 40%, transparent 60%, black 80%);
     }
