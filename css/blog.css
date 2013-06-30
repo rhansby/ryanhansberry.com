@@ -1,11 +1,11 @@
 #main .article-pic#tank {
-	background-image: url("../img/blog/tank.png");
+    background-image: url("../img/blog/tank.png");
 }
 
 #main .article-pic#tilt-shift {
-	background-image: url("../img/blog/tilt-shift.png");
+    background-image: url("../img/blog/tilt-shift.png");
 }
 
 #main .article-pic#game-of-life-pic {
-	background-image: url("../img/blog/game-of-life.jpg");
+    background-image: url("../img/blog/game-of-life.jpg");
 }
