@@ -1,91 +1,42 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Work | Ryan Hansberry</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<script type="text/javascript" src="//use.typekit.net/san3qvs.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/boilerplate.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		
-		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	</head>
-	<body>
-		<!--[if lt IE 7]>
-			<p class="chromeframe">
-				You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
-				or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> 
-				to improve your experience.
-			</p>
-		<![endif]-->
-		
-		<div id="container">
-			<header>
-				<h1>Ryan Hansberry</h1>
-				<h2><span class="bracer">{</span> student <span class="amp">&amp;</span> web developer <span class="bracer">}</span></h2>
-			</header>
-				
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="work.html" class="active">Work</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="about.html">About</a></li>
-				</ul>
-			</nav>
-			
-			<div id="main">
-				<h3>My Work</h3>
-				<hr>
-				
-				<div class="article-pic" id="code">
-				</div>
-				
-				<p>
-					This summer, I will be interning at <a href="http://www.yahoo.com/">Yahoo!</a> as a front-end 
-					development intern, in Santa Monica, CA.
-				</p>
-				<p>
-					I previously worked at <a href="http://www.starbucks.com/">Starbucks</a>, as a programming and IT intern,
-					in the summer of 2012, where I worked on the Starbucks mobile app's API, and helped Starbucks partners at 
-					the walk-in help desk.
-				</p>      
-				
-				<p>
-					Nowadays, when I'm not too swamped with coursework, I work at a local startup, where I work primarily in HTML, CSS,
-					and jQuery, and dabble in the Ruby on Rails backend.
-				</p>
-				<p>
-					You can get a more detailed idea of what I've done by looking at my <a href="docs/resume.pdf">resumé</a>, or by
-					checking out my <a href="https://github.com/rhansby">Github account</a>.
-				</p>
-			</div>
-			
-			<div id="push">
-				<!--Sticky footer hackery-->
-			</div>
-		</div>
-		
-		<footer>
-			&copy; 2013, Ryan Hansberry
-			<br>
-			reach me at <a href="mailto:rhansby@gmail.com">rhansby@gmail.com</a>
-		</footer>
-		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-		
-		<script src="js/plugins.js"></script>
-		<script src="js/main.js"></script>
-	</body>
-</html>
+<?php
+
+include 'template.php';
+
+print_header('work', 'Work');
+
+?>
+
+<div id="main">
+    <h3>My Work</h3>
+    <hr>
+
+    <div class="article-pic" id="code">
+    </div>
+
+    <p>
+        This summer, I will be interning at <a href="http://www.yahoo.com/">Yahoo!</a> as a front-end web
+        development intern, in Santa Monica, CA.
+    </p>
+    <p>
+        I previously worked at <a href="http://www.starbucks.com/">Starbucks</a>, as a programming and IT intern,
+        in the summer of 2012, where I worked on the Starbucks mobile app's API, and helped Starbucks partners at
+        the walk-in help desk.
+    </p>
+
+    <p>
+        Nowadays, when I'm not too swamped with coursework, I work at a local startup, where I work primarily in HTML, CSS,
+        and jQuery, and dabble in the Ruby on Rails backend.
+    </p>
+    <p>
+        You can get a more detailed idea of what I've done by looking at my <a href="docs/resume.pdf">resumé</a>, or by
+        checking out my <a href="https://github.com/rhansby">Github account</a>.
+    </p>
+</div>
+
+<?php
+
+print_footer();
+
+?>
+
 

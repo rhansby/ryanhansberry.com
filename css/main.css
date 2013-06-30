@@ -1,199 +1,205 @@
 /* Sticky footer styling: */
 /* (Kudos to Ryan Fait: http://ryanfait.com/sticky-footer/) */
 html, body {
-	height: 100%;
+    height: 100%;
 }
 
 html {
-	overflow-y: scroll; /* force scroll bar */
+    overflow-y: scroll; /* force scroll bar */
 }
 
 body {
-	background-image: url("../img/brillant.png");
-	font-family: "museo-sans", Georgia, Helvetica, sans-serif;
+    background-image: url("../img/brillant.png");
+    font-family: "museo-sans", Georgia, Helvetica, sans-serif;
 }
 
 a {
-	color: #236e40; /* green */
+    color: #236e40; /* green */
 }
-	a:hover {
-		color: #444;
-	}
+    a:hover {
+        color: #444;
+    }
 
 #container, footer {
-	width: 920px;
-	margin: 0 auto;
+    width: 920px;
+    margin: 0 auto;
 }
 
 #container {
-	width: 920px;
-	
-	/* Stick footer styling: */
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -70px;
+    width: 920px;
+
+    /* Stick footer styling: */
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -70px;
 }
 
 header {
-	margin-top: 20px;
+    margin-top: 20px;
 }
-	header h1, header h2 {
-		margin: 5px;
-		font-family: "museo-slab", Georgia, serif;
-		font-weight: 100;
-		color: grey;
-		text-align: center;
-	}
-	header h1 {
-		font-size: 28pt;
-		letter-spacing: 3px;
-		text-shadow: 1px 1px 1px white;
-	}
-	header h2 {
-		font-size: 14pt;
-		letter-spacing: 1px;
-	}
-		header h2 .amp {
-			font-family: Baskerville, Palatino, serif;
-			font-style: italic;
-		}
-		header h2 .bracer {
-			font-family: Georgia, Times, serif;
-		}
+    header a {
+        text-decoration: none;
+    }
+    header h1, header h2 {
+        margin: 5px;
+        font-family: "museo-slab", Georgia, serif;
+        font-weight: 100;
+        color: grey;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 28pt;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 1px white;
+    }
+        header h1:hover {
+            color: #555;
+        }
+    header h2 {
+        font-size: 14pt;
+        letter-spacing: 1px;
+    }
+        header h2 .amp {
+            font-family: Baskerville, Palatino, serif;
+            font-style: italic;
+        }
+        header h2 .bracer {
+            font-family: Georgia, Times, serif;
+        }
 
 nav {
-	margin-top: 30px;
-	text-align: center;
-	
-	padding: 10px 0;	
-	background-color: #f0f0f0;
-	border: 1px solid #999;
-	border-right: none;
-	border-left:  none;
+    margin-top: 30px;
+    text-align: center;
+
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    border-right: none;
+    border-left:  none;
 }
-	nav ul {
-		padding: 0;
-		margin: 0;
-	}
-		nav ul li {
-			display: inline;
-			letter-spacing: 2px;
-			margin-right: 45px;
-		}
-			nav ul li:last-child {
-				margin-right: 0;
-			}
-			nav ul li a {
-				text-decoration: none;
-				color: #999;
-				font-size: 14pt;
-				font-weight: 200;
-				text-shadow: #ddd 0px 0px 0px;
-			}
-				nav ul li a.active, nav ul li a:hover {
-					color: #347f51 !important; /* green */
-				}
-					nav ul li a.active:hover {
-						color: #222;
-					}
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+        nav ul li {
+            display: inline;
+            letter-spacing: 2px;
+            margin-right: 45px;
+        }
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: #999;
+                font-size: 14pt;
+                font-weight: 200;
+                text-shadow: #ddd 0px 0px 0px;
+            }
+                nav ul li a.active, nav ul li a:hover {
+                    color: #347f51 !important; /* green */
+                }
+                    nav ul li a.active:hover {
+                        color: #222;
+                    }
 
 #main {
-	margin: 35px 0 100px 0;
-	padding: 0 0px;
+    margin: 35px 0 100px 0;
+    padding: 0 0px;
 }
-	#main h3, #main h4 {
-		font-family: "museo-slab", Georgia, serif;
-		text-align: center;
-	}
-	
-	#main h3 {
-		font-weight: normal;
-		color: #347f51; /* green */
-		font-size: 20pt;
-		letter-spacing: 1px;
-		margin-bottom: 0;
-	}
-	#main h4 {
-		font-weight: 100;
-		font-size: 18pt;
-		margin-top: 20px;
-		margin-bottom: 10px;
-	}
-	#main p {
-		font-size: 14pt;
-		line-height: 18pt;
-		word-spacing: 1px;
-		width: 75%;
-		margin: auto;
-		margin-bottom: 15px;
-	}
-	#main .article-pic {
-		background-size: contain;
-		width: 200px;
-		height: 200px;
-		margin: 10px auto;
-		
-		border-top-left-radius: 50%;
-		border-top-right-radius: 50%;
-		border-bottom-right-radius: 50%;
-		border-bottom-left-radius: 50%;
-	}
-		#main .article-pic#strawberry {
-			background-image: url("../img/strawberry.jpg");
-			width: 250px;
-			height: 250px;
-		}
-		#main .article-pic#ryan {
-			background-image: url("../img/me2.jpg");
-		}
-		#main .article-pic#code {
-			background-image: url("../img/code.png");
-		}
-	#main .blog-post {
-		margin: 50px 0;
-	}
-		#main .blog-post:first-child {
-			margin-top: 10px;
-		}
-	#main .blog-post-header {
-		margin-top: 0;
-		margin-bottom: 10px;
-	}
+    #main h3, #main h4 {
+        font-family: "museo-slab", Georgia, serif;
+        text-align: center;
+    }
+
+    #main h3 {
+        font-weight: normal;
+        color: #347f51; /* green */
+        font-size: 20pt;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+    #main h4 {
+        font-weight: 100;
+        font-size: 18pt;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #main p {
+        font-size: 14pt;
+        line-height: 18pt;
+        word-spacing: 1px;
+        width: 75%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    #main .article-pic {
+        background-size: contain;
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+        #main .article-pic#strawberry {
+            background-image: url("../img/strawberry.jpg");
+            width: 250px;
+            height: 250px;
+        }
+        #main .article-pic#ryan {
+            background-image: url("../img/me2.jpg");
+        }
+        #main .article-pic#code {
+            background-image: url("../img/code.png");
+        }
+    #main .blog-post {
+        margin: 50px 0;
+    }
+        #main .blog-post:first-child {
+            margin-top: 10px;
+        }
+    #main .blog-post-header {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 
 /* Last bit of sticky footer styling: */
 footer, #push {
-	height: 70px;
+    height: 70px;
 }
 
 footer {
-	text-align: center;
-	clear: both;
-	padding-top: 20px;	
-	background-color: #f0f0f0;
-	border: 1px solid #999;
-	border-right: none;
-	border-left:  none;
+    text-align: center;
+    clear: both;
+    padding-top: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    border-right: none;
+    border-left:  none;
 }
 
 .typekit-badge {
-	display: none !important;
+    display: none !important;
 }
 
 @media (max-width: 920px) {
-	#container, footer {
-		width: auto;
-	}
-	
-	hr {
-		width: 90%;
-		margin: 1em auto;
-	}
-	
-	nav ul li {
-		margin-right: 25px;
-	}
-		nav ul li:last-child {
-			margin-right: 0;
-		}
+    #container, footer {
+        width: auto;
+    }
+
+    hr {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    nav ul li {
+        margin-right: 25px;
+    }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
 }
