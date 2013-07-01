@@ -1,89 +1,44 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Tilt Shift with CSS | Ryan Hansberry</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
 
-        <script type="text/javascript" src="//use.typekit.net/san3qvs.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+include $_SERVER['DOCUMENT_ROOT'] . '/template.php';
 
-        <link rel="stylesheet" href="../css/normalize.min.css">
-        <link rel="stylesheet" href="../css/boilerplate.css">
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/blog.css">
-        <link rel="stylesheet" type="text/css" href="tanks.css">
+$additional_css = '
+    <link rel="stylesheet" href="/blog/tilt-shift.css">
+';
 
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">
-                You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
-                or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>
-                to improve your experience.
-            </p>
-        <![endif]-->
+print_header('blog', 'WebGL Tanks', $additional_css);
 
-        <div id="container">
-            <header>
-                <h1>Ryan Hansberry</h1>
-                <h2><span class="bracer">{</span> student <span class="amp">&amp;</span> web developer <span class="bracer">}</span></h2>
-            </header>
+?>
 
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../work.html">Work</a></li>
-                    <li><a href="../blog.html" class="active">Blog</a></li>
-                    <li><a href="../about.html">About</a></li>
-                </ul>
-            </nav>
+<div id="main">
+    <h4>June 22, 2013</h4>
+    <h3>Creating a 3D Multiplayer Game in WebGL</h3>
+    <hr>
 
-            <div id="main">
-                <h4>June 22, 2013</h4>
-                <h3>Creating a 3D Multiplayer Game in WebGL</h3>
-                <hr>
+    <div class="article-pic" id="tank">
+    </div>
 
-                <div class="article-pic" id="tank">
-                </div>
+    <p>
+        Over the past month I and a few classmates have worked on our final project for our upper division
+        3D graphics course at UCLA. We chose to make a multiplayer game in WebGL, where players can compete
+        against each other as tanks.
+    </p>
 
-                <p>
-                    Over the past month I and a few classmates have worked on our final project for our upper division
-                    3D graphics course at UCLA. We chose to make a multiplayer game in WebGL, where players can compete
-                    against each other as tanks.
-                </p>
+    <p>
+        You (and friends) can play this game <a href="http://tanks.purpleoctopus.net">here</a>,
+        or check out the <a href="https://github.com/pcrumm/tank-project">github page</a>.
+    </p>
 
-                <p>
-                    You (and friends) can play this game <a href="http://tanks.purpleoctopus.net">here</a>,
-                    or check out the <a href="#">github page</a>.
-                </p>
+    <p>
+        My classmates and I were all pretty proud of getting a relatively feature-complete project like this
+        done in just over three weeks, so I wanted to expand a bit on the game's features and what I myself worked on.
+    </p>
 
-                <p>
-                    @TODO: write more.
-                </p>
-            </div>
+    <h5>Features</h5>
+</div>
 
-            <div id="push">
-                <!--Sticky footer hackery-->
-            </div>
-        </div>
+<?php
 
-        <footer>
-            &copy; 2013, Ryan Hansberry
-            <br>
-            reach me at <a href="mailto:rhansby@gmail.com">rhansby@gmail.com</a>
-        </footer>
+print_footer();
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-    </body>
-</html>
+?>

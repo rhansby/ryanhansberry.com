@@ -1,6 +1,6 @@
 <?php
 
-function print_header($active_page, $page_title)
+function print_header($active_page, $page_title, $additional_css)
 {
 
 ?>
@@ -15,7 +15,7 @@ function print_header($active_page, $page_title)
             <title>
                 <?php
 
-                if (isset($page_title)) {
+                if ( isset($page_title) ) {
                     echo $page_title . ' | ';
                 }
 
@@ -32,6 +32,14 @@ function print_header($active_page, $page_title)
             <link rel="stylesheet" href="/css/boilerplate.css">
             <link rel="stylesheet" href="/css/main.css">
             <link rel="stylesheet" href="/css/blog.css">
+
+            <?php
+
+            if ( isset($additional_css) ) {
+                echo $additional_css;
+            }
+
+            ?>
 
             <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         </head>
@@ -78,7 +86,7 @@ function print_header($active_page, $page_title)
 
 }
 
-function print_footer()
+function print_footer($additional_js)
 {
 
 ?>
@@ -96,8 +104,16 @@ function print_footer()
             <!script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-            <!script src="/js/plugins.js"></script>
-            <!script src="/js/main.js"></script>
+            <script src="/js/plugins.js"></script>
+            <script src="/js/main.js"></script>
+
+            <?php
+
+            if ( isset($additional_js) ) {
+                echo $additional_js;
+            }
+
+            ?>
         </body>
     </html>
 <?php

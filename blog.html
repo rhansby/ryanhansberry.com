@@ -1,8 +1,12 @@
 <?php
 
-include 'template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/template.php';
 
-print_header('blog', 'Blog Posts');
+$additional_css = '
+    <link rel="stylesheet" href="/css/blog.css">
+';
+
+print_header('blog', 'Blog', $additional_css);
 
 ?>
 
