@@ -1,6 +1,6 @@
 <?php
 
-function print_header($active_page, $page_title, $additional_css)
+function print_header($active_page, $page_title = '', $additional_css = '')
 {
 
 ?>
@@ -15,7 +15,7 @@ function print_header($active_page, $page_title, $additional_css)
             <title>
                 <?php
 
-                if ( isset($page_title) ) {
+                if ( $page_title !== '' ) {
                     echo $page_title . ' | ';
                 }
 
@@ -35,9 +35,7 @@ function print_header($active_page, $page_title, $additional_css)
 
             <?php
 
-            if ( isset($additional_css) ) {
-                echo $additional_css;
-            }
+            echo $additional_css;
 
             ?>
 
@@ -86,7 +84,7 @@ function print_header($active_page, $page_title, $additional_css)
 
 }
 
-function print_footer($additional_js)
+function print_footer($additional_js = '')
 {
 
 ?>
@@ -109,9 +107,7 @@ function print_footer($additional_js)
 
             <?php
 
-            if ( isset($additional_js) ) {
-                echo $additional_js;
-            }
+            echo $additional_js;
 
             ?>
         </body>

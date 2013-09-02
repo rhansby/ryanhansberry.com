@@ -1,6 +1,6 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . '/template.php';
+include '../template.php';
 
 $additional_css = '
     <link rel="stylesheet" href="/blog/tanks.css">
@@ -51,10 +51,12 @@ print_header('blog', 'WebGL Tanks', $additional_css);
         essentially a limited C). Often the most painful moments of developing this game were manually coordinating memory between the CPU and GPU.
     </p>
 
-    <div class="pic-wrapper">
-        <img src="tanks/early-game.png">
-        <p>An early version of the game, when I was trying to implement movement and rotation</p>
-    </div>
+    <a href="/blog/tanks/early-game.png">
+        <div class="pic-wrapper">
+            <img src="tanks/early-game.png">
+            <p>An early version of the game, when I was trying to implement movement and rotation</p>
+        </div>
+    </a>
 
     <p>
         The most technically difficult part of this project was understanding, creating, and implementing the linear algebra and trigonometry
@@ -85,10 +87,12 @@ print_header('blog', 'WebGL Tanks', $additional_css);
         of x and z points. Additional work had to be done to eventually force all y-values below the water line, in order to create an island.
     </p>
 
-    <div class="pic-wrapper">
-        <img src="tanks/early-terrain.png">
-        <p>Early stages of implementing terrain geometry and lighting</p>
-    </div>
+    <a href="/blog/tanks/early-terrain.png">
+        <div class="pic-wrapper">
+            <img src="tanks/early-terrain.png">
+            <p>Early stages of implementing terrain geometry and lighting</p>
+        </div>
+    </a>
 
     <p>
         In order to make the landscape more visually interesting, 5 textures were mapped onto it, based on height. For instance, the lowest altitude
@@ -105,10 +109,12 @@ print_header('blog', 'WebGL Tanks', $additional_css);
         a parabolic arc can be observed, as it arcs upward, and quickly accelerates downward due to gravity.
     </p>
 
-    <div class="pic-wrapper">
-        <img src="tanks/early-collision.png">
-        <p>Early collision detection: Successful height detection, but no proper tilting implemented yet</p>
-    </div>
+    <a href="/blog/tanks/early-collision.png">
+        <div class="pic-wrapper">
+            <img src="tanks/early-collision.png">
+            <p>Early collision detection: Successful height detection, but no proper tilting implemented yet</p>
+        </div>
+    </a>
 
     <p>
         In order to implement simple collision detection, a bounding sphere was used, which allows for simply checking if any
@@ -120,9 +126,11 @@ print_header('blog', 'WebGL Tanks', $additional_css);
 
     <h4 class="section-header">Multiplayer</h4>
 
-    <div class="pic-wrapper">
-        <img src="tanks/multiplayer.png">
-    </div>
+    <a href="/blog/tanks/multiplayer.png">
+        <div class="pic-wrapper">
+            <img src="tanks/multiplayer.png">
+        </div>
+    </a>
 
     <p>
         We used <a href="http://nodejs.org/">node.js</a> and <a href="http://socket.io/">socket.io</a> to implement and coordinate
