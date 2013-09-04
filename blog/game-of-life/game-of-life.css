@@ -18,17 +18,34 @@
 
 #board-canvas {
     background-image: url("grid-fallback.png");
+    background-size: 100%;
     margin-bottom: 100px;
 }
 
 @media (max-width: 920px) {
-    #board-creator .seed-button {
-        width: 85px;
+    #board-creator, #board-canvas, #generation-counter-wrapper {
+        float: none;
+        margin: 20px auto;
     }
+
     #board-canvas {
+        display: block;
         margin-bottom: 0;
     }
-    #generation-counter-wrapper {
-        visibility: hidden;
+}
+
+@media (max-width: 550px) {
+    #board-canvas {
+        width: 70%;
     }
+
+    #generation-counter-wrapper h4, #generation-counter-wrapper h3 {
+        margin: 0;
+    }
+        #generation-counter-wrapper h4 {
+            float: left;
+        }
+        #generation-counter-wrapper h3 {
+            float: right;
+        }
 }
