@@ -3,7 +3,7 @@
 include '../template.php';
 
 $additional_css = '
-    <link rel="stylesheet" href="/blog/tilt-shift.css">
+    <link rel="stylesheet" href="/blog/tilt-shift/tilt-shift.css">
 ';
 
 print_header('blog', 'Tilt Shift with CSS', $additional_css);
@@ -24,48 +24,45 @@ print_header('blog', 'Tilt Shift with CSS', $additional_css);
     </p>
 
     <p>
-        This effect is only supported in Chrome and Safari :(
-    </p>
-
-    <p>
         Hover over each photo to reveal the original.
     </p>
 
-    <div class="pic-row">
-        <div class="ts-pic-wrapper" id="mountain-man">
-            <img class="ts-pic" src="tilt-shift/mountain-man.jpg">
-            <p>Palm Desert</p>
-        </div>
+    <p>
+        (This effect is only supported in Webkit browsers)
+    </p>
 
-        <div class="ts-pic-wrapper" id="cactus">
-            <img class="ts-pic" src="tilt-shift/cactus.jpg">
-            <p>Cactus at Joshua Tree National Park</p>
-        </div>
+    <div class="ts-pic-wrapper" id="mountain-man">
+        <img class="ts-pic" src="tilt-shift/mountain-man.jpg">
+        <p>Palm Desert</p>
     </div>
 
-    <div class="pic-row">
-        <div class="ts-pic-wrapper" id="moore">
-            <img class="ts-pic" src="tilt-shift/moore.jpg">
-            <p>Moore Bulding at UCLA</p>
-        </div>
-
-        <div class="ts-pic-wrapper" id="plaza">
-            <img class="ts-pic" src="tilt-shift/plaza.jpg">
-            <p>Bruin Plaza at UCLA</p>
-        </div>
+    <div class="ts-pic-wrapper" id="cactus">
+        <img class="ts-pic" src="tilt-shift/cactus.jpg">
+        <p>Cactus at Joshua Tree National Park</p>
     </div>
 
-    <div class="pic-row last">
-        <div class="ts-pic-wrapper" id="ups-truck">
-            <img class="ts-pic" src="tilt-shift/ups.jpg">
-            <p>UPS Truck in Bellevue, WA</p>
-        </div>
-
-        <div class="ts-pic-wrapper" id="cars">
-            <img class="ts-pic" src="tilt-shift/cars.jpg">
-            <p>Parking Lot at Santa Monica</p>
-        </div>
+    <div class="ts-pic-wrapper" id="moore">
+        <img class="ts-pic" src="tilt-shift/moore.jpg">
+        <p>Moore Bulding at UCLA</p>
     </div>
+
+    <div class="ts-pic-wrapper" id="plaza">
+        <img class="ts-pic" src="tilt-shift/plaza.jpg">
+        <p>Bruin Plaza at UCLA</p>
+    </div>
+
+    <div class="ts-pic-wrapper" id="ups-truck">
+        <img class="ts-pic" src="tilt-shift/ups.jpg">
+        <p>UPS Truck in Bellevue, WA</p>
+    </div>
+
+    <div class="ts-pic-wrapper" id="cars">
+        <img class="ts-pic" src="tilt-shift/cars.jpg">
+        <p>Parking Lot at Santa Monica</p>
+    </div>
+
+    <div id="clearfix" style="clear:both;"></div>
+
     <hr>
 
     <p>

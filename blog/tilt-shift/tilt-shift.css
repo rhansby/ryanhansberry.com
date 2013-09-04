@@ -1,12 +1,3 @@
-.pic-row {
-    clear: both;
-    margin: auto;
-    height: 400px;
-}
-    .pic-row.last {
-        margin-bottom: 80px;
-    }
-
 .ts-pic-wrapper, img.ts-pic {
     width: 400px;
     height: 400px;
@@ -26,9 +17,12 @@
 
     margin: 20px 0 50px 20px;
 }
-    .ts-pic-wrapper:last-child {
-        margin-left: 30px;
+    .ts-pic-wrapper:hover {
+        cursor: pointer;
     }
+        .ts-pic-wrapper:hover img.ts-pic {
+            -webkit-filter: blur(0px) !important;
+        }
     .ts-pic-wrapper p {
         text-align: center;
         font-size: 12pt !important;
@@ -39,22 +33,15 @@
             cursor: text;
         }
 
-.ts-pic-wrapper:hover {
-    cursor: pointer;
-}
-    .ts-pic-wrapper:hover img.ts-pic {
-        -webkit-filter: blur(0px) !important;
-    }
-
 .ts-pic-wrapper#mountain-man {
-    background: url("tilt-shift/mountain-man.jpg");
+    background-image: url("mountain-man.jpg");
 }
     .ts-pic-wrapper#mountain-man img.ts-pic {
         -webkit-filter: blur(2px);
         -webkit-mask-box-image: -webkit-linear-gradient(black 50%, transparent 75%, transparent 75%, black 85%);
     }
 .ts-pic-wrapper#cactus {
-    background: url("tilt-shift/cactus.jpg");
+    background-image: url("cactus.jpg");
 }
     .ts-pic-wrapper#cactus img.ts-pic {
         -webkit-filter: blur(2px);
@@ -62,14 +49,14 @@
     }
 
 .ts-pic-wrapper#moore {
-    background: url("tilt-shift/moore.jpg");
+    background-image: url("moore.jpg");
 }
     .ts-pic-wrapper#moore img.ts-pic {
         -webkit-filter: blur(3px);
         -webkit-mask-box-image: -webkit-linear-gradient(black 5%, transparent 40%, transparent 60%, black 80%);
     }
 .ts-pic-wrapper#plaza {
-    background: url("tilt-shift/plaza.jpg");
+    background-image: url("plaza.jpg");
 }
     .ts-pic-wrapper#plaza img.ts-pic {
         -webkit-filter: blur(2px);
@@ -77,14 +64,14 @@
     }
 
 .ts-pic-wrapper#ups-truck {
-    background: url("tilt-shift/ups.jpg");
+    background-image: url("ups.jpg");
 }
     .ts-pic-wrapper#ups-truck img.ts-pic {
         -webkit-filter: blur(2px);
         -webkit-mask-box-image: -webkit-linear-gradient(black 30%, transparent 45%, transparent 75%, black 95%);
     }
 .ts-pic-wrapper#cars {
-    background: url("tilt-shift/cars.jpg");
+    background-image: url("cars.jpg");
 }
     .ts-pic-wrapper#cars img.ts-pic {
         -webkit-filter: blur(2px);
@@ -92,13 +79,15 @@
     }
 
 @media (max-width: 920px) {
-    .pic-row {
-        clear: both;
-        margin: 0 auto !important;
-        width: 400px;
-    }
-
     .ts-pic-wrapper {
-        margin: 20px auto !important;
+        float: none;
+        margin: 70px auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .ts-pic-wrapper, img.ts-pic {
+        width: 300px;
+        height: 300px;
     }
 }
