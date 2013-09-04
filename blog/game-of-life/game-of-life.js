@@ -120,7 +120,7 @@ function init(board_width, board_height) {
     })
 
     stage.sprite_sheet = new createjs.SpriteSheet({
-        'images': ['tiles.png'],
+        'images': ['game-of-life/tiles.png'],
         'frames': {'width': 10, 'height': 10, 'regX': 0, 'regY': 0},
         'animations': {
             'dead': [0, 0, 'dead'],
