@@ -41,6 +41,22 @@ function print_header($active_page, $page_title = '', $additional_css = '')
 
             ?>
 
+            <!-- google web analytics -->
+            <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-43761152-1']);
+                _gaq.push(['_trackPageview']);
+
+                (function() {
+                    var ga = document.createElement('script');
+                    ga.type = 'text/javascript';
+                    ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(ga, s);
+                })();
+            </script>
+
             <!--[if lt IE 9]>
                 <script src="/js/vendor/html5shiv.min.js"></script>
             <![endif]-->
