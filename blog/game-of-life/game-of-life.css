@@ -9,7 +9,7 @@
         display: block;
         margin: auto;
         margin-top: 10px;
-        width: 75px;
+        min-width: 75px;
         padding: 5px;
     }
     #board-creator #play {

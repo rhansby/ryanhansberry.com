@@ -72,6 +72,10 @@ print_header('blog', 'Tilt Shift with CSS', $additional_css);
 
 <?php
 
-print_footer();
+$additional_js = '
+    <script type="text/javascript" src="/blog/tilt-shift/tilt-shift.js"></script>
+';
+
+print_footer($additional_js);
 
 ?>

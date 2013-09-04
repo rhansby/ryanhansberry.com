@@ -20,7 +20,7 @@
     .ts-pic-wrapper:hover {
         cursor: pointer;
     }
-        .ts-pic-wrapper:hover img.ts-pic {
+        .ts-pic-wrapper:hover img.ts-pic, .ts-pic-wrapper.no-blur img.ts-pic {
             -webkit-filter: blur(0px) !important;
         }
     .ts-pic-wrapper p {
@@ -87,7 +87,7 @@
 
 @media (max-width: 550px) {
     .ts-pic-wrapper, img.ts-pic {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }
