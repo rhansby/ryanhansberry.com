@@ -12,6 +12,7 @@ function print_header($active_page, $page_title = '', $additional_css = '')
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>
                 <?php
 
@@ -22,8 +23,9 @@ function print_header($active_page, $page_title = '', $additional_css = '')
                 ?>
                 Ryan Hansberry
             </title>
-            <meta name="description" content="">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+            <link rel="apple-touch-icon image_src" href="/img/favicon/favicon.png">
 
             <script type="text/javascript" src="//use.typekit.net/san3qvs.js"></script>
             <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
