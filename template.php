@@ -41,7 +41,7 @@ function print_header($active_page, $page_title = '', $additional_css = '')
 
             ?>
 
-            <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+            <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
         </head>
         <body>
             <!--[if lt IE 7]>
