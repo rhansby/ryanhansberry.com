@@ -251,7 +251,7 @@ window.onload = function() {
                     continue;
                 default:
                     break;
-            };
+            }
 
             board.bool_grid[ref_x + i][ref_y] = true;
         }

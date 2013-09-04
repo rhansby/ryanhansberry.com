@@ -17,6 +17,7 @@
     }
 
 #board-canvas {
+    background-image: url("grid-fallback.png");
     margin-bottom: 100px;
 }
 
