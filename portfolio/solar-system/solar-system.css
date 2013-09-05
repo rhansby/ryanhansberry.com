@@ -1,0 +1,17 @@
+#canvas {
+    background: #111;
+    -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+       -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+    height: 400px;
+    width: 800px;
+    margin: auto;
+}
+    #canvas:hover, #canvas canvas:active {
+        cursor: move;
+    }
+
+p {
+    margin-top: 40px !important;
+    text-align: center;
+}

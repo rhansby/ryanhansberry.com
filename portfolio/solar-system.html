@@ -1,0 +1,31 @@
+<?php
+
+include '../template.php';
+
+$additional_css = '
+    <link rel="stylesheet" href="/portfolio/solar-system/solar-system.css">
+';
+
+print_header('work', 'WebGL Solar System', $additional_css);
+
+?>
+
+<div id="main">
+    <div id="canvas">
+    </div>
+
+    <p>Drag your mouse across the canvas to rotate the solar system</p>
+</div>
+
+<?php
+
+$additional_js = '
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/portfolio/lib/three.min.js"></script>
+    <script type="text/javascript" src="/portfolio/solar-system/Planet.js"></script>
+    <script type="text/javascript" src="/portfolio/solar-system/app.js"></script>
+';
+
+print_footer($additional_js);
+
+?>
