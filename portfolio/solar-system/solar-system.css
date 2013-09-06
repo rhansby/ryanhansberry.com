@@ -67,3 +67,24 @@ p#info {
         cursor:    -moz-grabbing;
         cursor: -webkit-grabbing;
     }
+
+@media (max-width: 920px) {
+    #canvas {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 660px) {
+    .control-panel > div {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #canvas {
+        height: 225px;
+        width: 300px;
+    }
+}

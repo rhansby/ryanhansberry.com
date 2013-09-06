@@ -25,6 +25,18 @@ $(document).ready(function() {
     renderer.setSize(width, height);
     $canvas.append(renderer.domElement);
 
+    $(window).resize(function() {
+        if (width !== $('#canvas').width()) {
+            width = $('#canvas').width();
+            height = $('#canvas').height();
+
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(width, height);
+        }
+    });
+
     var light = new THREE.AmbientLight( 0x705030 ); // soft white light
     App.scene.add( light );
 
