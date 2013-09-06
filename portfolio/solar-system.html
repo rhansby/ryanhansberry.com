@@ -11,16 +11,84 @@ print_header('work', 'WebGL Solar System', $additional_css);
 ?>
 
 <div id="main">
+    <p id="info">
+        move your mouse across the canvas to rotate the solar system
+        <br>
+        <span id="fine-print">(this experiment works best in webkit browsers)</span>
+    </p>
+
     <div id="canvas">
     </div>
 
-    <p>Drag your mouse across the canvas to rotate the solar system</p>
+    <h4>Controls!</h4>
+
+    <ul id="control-tabs">
+        <li id="tab-1" class="selected">"Venus"</li>
+        <li id="tab-2">"Mercury"</li>
+        <li id="tab-3">"Earth"</li>
+        <li id="tab-4">"Jupiter"</li>
+        <li id="tab-5">"Pluto"</li>
+    </ul>
+
+    <div id="control-panels">
+        <div class="control-panel" id="panel-1" data-planet-id="0">
+            <div class="radius">
+                <h4>Orbit: <span id="slider-value-1">8</span></h4>
+                <input class="slider" data-slider-value-target="1" type="range" min="5" max="50" value="8">
+            </div>
+            <div class="scale">
+                <h4>Size: <span id="slider-value-2">2</span></h4>
+                <input class="slider" data-slider-value-target="2" type="range" min="1" max="10" value="2">
+            </div>
+        </div>
+        <div class="control-panel" id="panel-2" data-planet-id="1" style="display: none">
+            <div class="radius">
+                <h4>Orbit: <span id="slider-value-3">11</span></h4>
+                <input class="slider" data-slider-value-target="3" type="range" min="5" max="50" value="11">
+            </div>
+            <div class="scale">
+                <h4>Size: <span id="slider-value-4">1</span></h4>
+                <input class="slider" data-slider-value-target="4" type="range" min="1" max="10" value="1">
+            </div>
+        </div>
+        <div class="control-panel" id="panel-3" data-planet-id="2" style="display: none">
+            <div class="radius">
+                <h4>Orbit: <span id="slider-value-6">17</span></h4>
+                <input class="slider" data-slider-value-target="5" type="range" min="5" max="50" value="17">
+            </div>
+            <div class="scale">
+                <h4>Size: <span id="slider-value-6">3</span></h4>
+                <input class="slider" data-slider-value-target="6" type="range" min="1" max="10" value="3">
+            </div>
+        </div>
+        <div class="control-panel" id="panel-4" data-planet-id="3" style="display: none">
+            <div class="radius">
+                <h4>Orbit: <span id="slider-value-7">28</span></h4>
+                <input class="slider" data-slider-value-target="7" type="range" min="5" max="50" value="28">
+            </div>
+            <div class="scale">
+                <h4>Size: <span id="slider-value-8">5</span></h4>
+                <input class="slider" data-slider-value-target="8" type="range" min="1" max="10" value="5">
+            </div>
+        </div>
+        <div class="control-panel" id="panel-5" data-planet-id="4" style="display: none">
+            <div class="radius">
+                <h4>Orbit: <span id="slider-value-9">35</span></h4>
+                <input class="slider" data-slider-value-target="9" type="range" min="5" max="50" value="35">
+            </div>
+            <div class="scale">
+                <h4>Size: <span id="slider-value-10">2</span></h4>
+                <input class="slider" data-slider-value-target="10" type="range" min="1" max="10" value="2">
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php
 
 $additional_js = '
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/portfolio/solar-system/controls.js"></script>
     <script type="text/javascript" src="/portfolio/lib/three.min.js"></script>
     <script type="text/javascript" src="/portfolio/solar-system/Planet.js"></script>
     <script type="text/javascript" src="/portfolio/solar-system/app.js"></script>

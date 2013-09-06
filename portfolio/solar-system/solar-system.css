@@ -11,7 +11,59 @@
         cursor: move;
     }
 
-p {
-    margin-top: 40px !important;
+p#info {
+    font-size: 12pt;
+    margin-bottom: 20px;
     text-align: center;
 }
+    #fine-print {
+        color: #888;
+    }
+
+#main h4 {
+    margin-top: 30px;
+}
+
+#control-tabs {
+    padding: 0;
+    text-align: center;
+}
+    #control-tabs li {
+        color: #347f51;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13pt;
+        margin: 0 10px;
+    }
+        #control-tabs li.selected {
+            border-bottom: 3px solid #347f51;
+        }
+
+#control-panels {
+    height: 74px;
+}
+
+.control-panel {
+    clear: both;
+    margin: auto;
+    width: 40%;
+}
+    .control-panel > div {
+        display: inline-block;
+        width: 49%;
+    }
+    #main .control-panel h4 {
+        margin-top: 10px;
+    }
+
+.slider {
+    cursor: pointer;
+    cursor:    -moz-grab;
+    cursor: -webkit-grab;
+    display: block;
+    margin: auto;
+}
+    .slider:active {
+        cursor:    -moz-grabbing;
+        cursor: -webkit-grabbing;
+    }

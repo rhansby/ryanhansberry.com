@@ -34,7 +34,7 @@ $(document).ready(function() {
     pointLight.position.z = 0;
     App.scene.add(pointLight);
 
-    camera.position.z = 40;
+    camera.position.z = 50;
 
     var stars = new Planet({
         material: new THREE.MeshPhongMaterial({ map: THREE.ImageUtils.loadTexture("/portfolio/solar-system/img/stars.jpg") }),
@@ -63,7 +63,7 @@ $(document).ready(function() {
         // Small red planet
         new Planet({
             material: new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture("/portfolio/solar-system/img/venus.jpg") }),
-            scale: 1.1,
+            scale: 2,
             orbit_radius: 8,
             orbit_speed: 0.6,
             orbit_y_tilt: 5
@@ -71,8 +71,8 @@ $(document).ready(function() {
 
         // Smaller red planet
         new Planet({
-            scale: 0.6,
-            orbit_radius: 10,
+            scale: 1,
+            orbit_radius: 11,
             orbit_speed: -0.4,
             orbit_y_tilt: 0.5
         }),
@@ -81,8 +81,8 @@ $(document).ready(function() {
         new Planet({
             material: new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture("/portfolio/solar-system/img/earth.jpg") }),
             rotation_speed: 1.5,
-            scale: 1.7,
-            orbit_radius: 15,
+            scale: 3,
+            orbit_radius: 17,
             orbit_speed: 0.75,
             orbit_y_tilt: -2
         }),
@@ -90,8 +90,8 @@ $(document).ready(function() {
         // Large Jupiter
         new Planet({
             material: new THREE.MeshPhongMaterial({ map: THREE.ImageUtils.loadTexture("/portfolio/solar-system/img/jupiter.jpg") }),
-            scale: 3,
-            orbit_radius: 25,
+            scale: 5,
+            orbit_radius: 28,
             orbit_speed: 0.1,
             orbit_y_tilt: 1
         }),
@@ -99,8 +99,8 @@ $(document).ready(function() {
         // Medium icy planet
         new Planet({
             material: new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture("/portfolio/solar-system/img/ice.png") }),
-            scale: 1,
-            orbit_radius: 30,
+            scale: 2,
+            orbit_radius: 35,
             orbit_speed: -0.2,
             orbit_y_tilt: -7
         })
@@ -121,6 +121,19 @@ $(document).ready(function() {
         solar_system.add(planets[i]);
     }
     App.scene.add(solar_system);
+
+    App.updatePlanetAttributes = function(planet_id, new_attrs) {
+        if (isNaN(planet_id) || planet_id < 0 || 4 < planet_id || ! new_attrs) {
+            return false;
+        }
+        if (new_attrs.radius) {
+            planets[planet_id].orbit_attrs.radius = new_attrs.radius;
+        }
+        if (new_attrs.scale) {
+            planets[planet_id].scale.x = planets[planet_id].scale.y = planets[planet_id].scale.z = new_attrs.scale;
+        }
+        return true;
+    };
 
     var mouseX = 0, mouseY = 0;
     document.getElementById('canvas').addEventListener('mousemove', function(event) {
