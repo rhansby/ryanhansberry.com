@@ -75,7 +75,7 @@ function print_header($active_page, $page_title = '', $additional_css = '')
                     <a href="/">
                         <h1>Ryan Hansberry</h1>
                     </a>
-                    <h2><span class="bracer">{</span> student <span class="amp">&amp;</span> web developer <span class="bracer">}</span></h2>
+                    <h2><span class="bracer">{</span> student <span class="amp">&amp;</span> software engineer <span class="bracer">}</span></h2>
                 </header>
 
                 <nav>
