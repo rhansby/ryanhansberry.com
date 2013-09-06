@@ -54,21 +54,15 @@ $(document).ready(function() {
     });
 
     var sun = new Planet({
-        material: new THREE.MeshPhongMaterial({ map: THREE.ImageUtils.loadTexture("/portfolio/solar-system/img/sun.jpg") }),
+        material: new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture("/portfolio/solar-system/img/sun.jpg") }),
         scale: 5
     });
 
-    // Dirty hack to flip the sphere "inside out" and reverse its normals so that its whole surface is lit,
-    // even though the point light source is inside the sphere:
+    // Dirty hack to flip the sphere "inside out" and reverse its normals so that its whole interior surface is lit:
     for (var i = 0; i < stars.geometry.vertices.length; i++) {
         stars.geometry.vertices[i].x *= -1;
         stars.geometry.vertices[i].y *= -1;
         stars.geometry.vertices[i].z *= -1;
-    }
-    for (i = 0; i < sun.geometry.vertices.length; i++) {
-        sun.geometry.vertices[i].x *= -1;
-        sun.geometry.vertices[i].y *= -1;
-        sun.geometry.vertices[i].z *= -1;
     }
 
     var planets = [
