@@ -1,0 +1,97 @@
+<?php
+
+include 'template.php';
+
+$additional_css = '
+    <link rel="stylesheet" href="/css/resume.css">
+';
+
+print_header('resume', 'Resume', $additional_css);
+
+?>
+
+<div id="main">
+    <div class="resume-column" id="resume-work">
+        <h3>Work Experience</h3>
+
+        <div class="resume-item">
+            <h5>Yahoo! <span class="date">Jun 2013 - Sep 2013</span></h5>
+            <h5>Software Engineering Intern</h5>
+            <p class="item-info">
+                I worked in frontend web development at Yahoo! Sports, primarily in HTML/CSS and PHP, with some JavaScript.<br><br>
+                My large project in the course of my internship was implementing the ability to create
+                a universal theme for the site, allowing for the recent site redesign. My work allowed other Yahoo properties such as
+                Weather and Movies to also easily change their themes. The final project of my internship was creating an internal tool
+                for writers and editors to use that would allow them to dynamically create sports infographics.
+            </p>
+        </div>
+
+        <div class="resume-item">
+            <h5>Starbucks <span class="date">Jul 2012 - Sep 2012</span></h5>
+            <h5>Technology Intern</h5>
+            <p class="item-info">
+                I implemented the location services and database for an update to the API for the
+                Starbucks mobile app. I worked in C#, within the ASP.NET MVC 4 framework, and used
+                MongoDB for the new database.<br><br>
+                I also provided IT support at the Starbucks corporate walk-in enterprise helpdesk.
+            </p>
+        </div>
+
+        <div class="resume-item">
+            <h5>Central Catholic H.S. <span class="date">Jul 2009 - Jun 2011</span></h5>
+            <h5>IT Support</h5>
+            <p class="item-info">
+                I provided IT support for teachers. I also sat on a subcommittee of the school board as
+                a student consultant on matters of technology direction and funding.
+            </p>
+        </div>
+    </div>
+
+    <div class="resume-column" id="resume-other">
+        <h3>Education</h3>
+        <div class="resume-item">
+            <h5>UCLA <span class="date">2011 - 2015</span></h5>
+            <h5 class="item-info">Computer Science, GPA: 3.5</h5>
+        </div>
+
+        <div class="resume-item">
+            <h5>Central Catholic HS <span class="date">2007 - 2011</span></h5>
+            <h5 class="item-info">GPA: 4.0</h5>
+        </div>
+
+        <div class="fluid-item">
+            <h3>Languages</h3>
+            <ul class="resume-item item-info">
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>Ruby</li>
+            </ul>
+        </div>
+
+        <div class="fluid-item">
+            <h3>Technologies</h3>
+            <ul class="resume-item item-info">
+                <li>jQuery</li>
+                <li>OpenGL & WebGL</li>
+                <li>Node.js</li>
+                <li>Git</li>
+                <li>SVN</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
+                <li>*NIX</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<?php
+
+print_footer();
+
+?>
+
+

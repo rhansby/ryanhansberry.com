@@ -1,0 +1,87 @@
+.resume-column {
+    float: left;
+}
+    #resume-work {
+        width: 60%;
+    }
+    #resume-other {
+        width: 40%;
+    }
+
+    #main .resume-column h3,
+    #main .resume-column h5 {
+        font-weight: normal;
+        margin: 0;
+        text-align: left;
+    }
+    #main .resume-column h3 {
+        font-size: 16pt;
+        margin-bottom: 15px;
+    }
+    .resume-column h5 {
+        font-size: 14pt;
+    }
+
+    #main .resume-column p {
+        margin: 0;
+        width: 100%;
+    }
+
+.resume-item {
+    border-left: 1px solid #347f51;
+    list-style: none;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    width: 90%;
+}
+    .resume-item li {
+        font-size: 14pt;
+        margin-bottom: 5px;
+    }
+
+.item-info {
+    color: #555;
+}
+
+.date {
+    color: #bbb;
+    float: right;
+}
+
+@media (max-width: 920px) {
+    .resume-column {
+        float: none;
+        margin: 20px auto;
+    }
+        #resume-work,
+        #resume-other {
+            width: 80%;
+        }
+        #resume-other {
+            margin-bottom: 50px;
+            overflow: auto;
+        }
+
+    #main .resume-column h3 {
+        text-align: center;
+    }
+
+    .resume-item {
+        margin-bottom: 50px;
+    }
+
+    .fluid-item {
+        float: left;
+        width: 50%;
+    }
+        #main .fluid-item h3 {
+            text-align: left;
+        }
+}
+
+@media (max-width: 650px) {
+    #resume-work,
+    #resume-other {
+        width: 95%;
+    }
+}
