@@ -77,6 +77,10 @@
         #main .fluid-item h3 {
             text-align: left;
         }
+
+    #resume-footer p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 650px) {
