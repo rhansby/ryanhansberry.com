@@ -21,8 +21,8 @@ function print_header($active_page, $page_title = '', $additional_css = '')
             Ryan Hansberry
         </title>
 
-        <link rel="shortcut icon" href="/img/favicon/favicon.ico">
-        <link rel="apple-touch-icon-precomposed" href="/img/favicon/favicon.png">
+        <link rel="shortcut icon" href="/img/favicon/favicon-alt.ico">
+        <link rel="apple-touch-icon-precomposed" href="/img/favicon/touch-icon.png">
 
         <script type="text/javascript" src="//use.typekit.net/san3qvs.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
