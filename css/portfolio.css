@@ -1,0 +1,19 @@
+#main {
+    overflow: auto;
+}
+
+.work {
+    float: left;
+    width: 33%;
+}
+
+.work img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    width: 200px;
+}
+
+.work p {
+    text-align: center;
+}
