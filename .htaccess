@@ -7,6 +7,9 @@ RewriteBase /
 AddType application/x-httpd-php .html .htm
 AddHandler application/x-httpd-php .html .htm
 
+# uncomment this line when on webfaction server:
+#AddHandler php54-cgi .html # for webfaction
+
 #Options All -Indexes # prevent access to folders
 ErrorDocument 404 /404.html
 
