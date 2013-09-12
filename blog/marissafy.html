@@ -1,0 +1,39 @@
+<?php
+
+include '../template.php';
+
+$additional_css = '
+    <link rel="stylesheet" href="/blog/marissafy/marissafy.css">
+';
+
+print_header('blog', 'Marissafy', $additional_css);
+
+?>
+
+<div id="main">
+    <h4>July 28, 2013</h4>
+    <h3>Marissafy - A Yahoo! Hackathon Project</h3>
+    <hr>
+
+    <div class="article-pic" id="marissafy">
+    </div>
+
+    <p>
+        This past weekend, close to a hundred interns from various companies (myself included) visited Yahoo's headquarters
+        in Sunnyvale for the Y! Intern Hackathon. My teammates and I ended up building a super-awesome, totally-serious web app.
+    </p>
+
+    <p>
+        You can find the website <a href="http://marissafy.herokuapp.com">here</a>. Make sure you have a photo with (a) face(s)!
+    </p>
+
+    <!--p>
+        Talking points: using heroku, the stack, face recognition, the website crashed when we got too many requests :D
+    </p-->
+</div>
+
+<?php
+
+print_footer();
+
+?>
