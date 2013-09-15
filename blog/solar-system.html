@@ -1,0 +1,53 @@
+<?php
+
+include '../template.php';
+
+$additional_css = '
+    <link rel="stylesheet" href="/blog/solar-system/solar-system.css">
+';
+
+print_header('blog', 'WebGL Solar System', $additional_css);
+
+?>
+
+<div id="main">
+    <h4>September 7, 2013</h4>
+    <h3>WebGL Solar System</h3>
+    <hr>
+
+    <div class="article-pic" id="solar-system">
+    </div>
+
+    <p>
+        I've been wanting to use <a href="http://threejs.org">Three.js</a> for the past few months, so when I had
+        some free time this past weekend, I decided to make a small graphics demo with it.
+    </p>
+
+    <p>
+        <a href="/portfolio/solar-system.html">You can find the demo here.</a>
+    </p>
+
+    <p>
+        I had previously worked on a solar system demo, in C++ with OpenGL, and had to write fairly long shaders
+        to handle transformations and light. Writing this demo using an existing graphics engine was considerably
+        more enjoyable, mostly because it completely eliminated the need to fiddle with shaders. Writing in JavaScript
+        also allowed me to quickly hack out ideas much faster than would have been possible in C++.
+    </p>
+
+    <p>
+        Writing this demo in the "realm" of HTML and JavaScript also allowed me to easily create a clean and
+        decent looking interface, allowing for the Controls section that you can find below the canvas, and also allowed
+        for really simple mouse tracking.
+    </p>
+
+    <p>
+        In short, the WebGL + Three.js world has caused me significantly less wailing and gnashing of teeth than I'm accustomed to.
+        I'm really excited to see what new project I'll work on with it.
+    </p>
+</div>
+
+<?php
+
+print_footer();
+
+?>

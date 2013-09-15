@@ -11,7 +11,7 @@ print_header('blog', 'Marissafy', $additional_css);
 ?>
 
 <div id="main">
-    <h4>July 28, 2013</h4>
+    <h4>July 30, 2013</h4>
     <h3>Marissafy - A Yahoo! Hackathon Project</h3>
     <hr>
 
@@ -24,12 +24,81 @@ print_header('blog', 'Marissafy', $additional_css);
     </p>
 
     <p>
-        You can find the website <a href="http://marissafy.herokuapp.com">here</a>. Make sure you have a photo with (a) face(s)!
+        You can find the original hack <a href="http://marissafy.herokuapp.com">here</a>.
+        A new, refactored version of this app can be found <a href="http://marissafyr.com">here</a>.
+        Make sure you have a photo with one or more faces!
     </p>
 
-    <!--p>
-        Talking points: using heroku, the stack, face recognition, the website crashed when we got too many requests :D
-    </p-->
+    <img src="" width="100" height="100"><!--Note: put pic of me, Calvin, and Emi-->
+
+    <p>
+        We ended up seeing hundreds of Yahoo! employees visit the site, and even got several submissions to
+        <a href="http://marissafy.tumblr.com">our tumblr.</a>
+    </p>
+
+    <h4 class="section-header">The Original Hack</h4>
+
+    <p>
+        We all learned a lot from hacking this thing together; personally, it was my first time working with
+        <a href="http://heroku.com">Heroku</a>, <a href="#">Amazon Web Service</a>, and the <a href="#">Imgur API</a>. I also learned
+        learned a bit more about HTML5's Canvas along the way.
+    </a>
+
+    <p>
+        In order to implement the face recognition component of the app, we found that a C++ library, <a href="#">OpenCV</a>,
+        was supposedly the most accurate. We needed a server that would allow us to run a C++ program: we decided to use AWS.
+        We decided that we didn't want the AWS server to also have to deal with serving the app, so we let Heroku handle that part.
+    </p>
+
+    <p>
+        Thus, the original hack works as so: the user uploads a photo; the Heroku server relays the photo to AWS; the web service
+        calculates and returns the coordinates and dimensions of the faces in the photo; Heroku relays this information to the client;
+        and finally, client JavaScript, via Canvas, pastes Marissa's face wherever it's been told to.
+    </p>
+
+    <p>
+        Initially, we were all proud of having been able to maneuver such a large stack in such a short time. But, on second thought,
+        I personally feel that this was bad case of over-engineering. I think we got caught up in thinking we needed to use OpenCV,
+        as opposed to an <a href="#">entirely client-based face recognition library</a>. On top of that, even if OpenCV proved necessary,
+        perhaps we should have kept things simpler and served the app directly from AWS, so we would have to deal with just one server.
+    </p>
+
+    <p>
+        I did still learn a great deal: Heroku did prove to be awesome at getting an app up and running really quickly; I discovered
+        that Canvas is great a compositing images, and makes it really easy to create a "screenshot" of it; and was pleasantly surprised
+        at how easy it was to put such an image online with the Imgur API.
+    </p>
+
+    <h4 class="section-header">The New, Refactored Hack</h4>
+
+    <p>
+        I felt uncomfortable with the convoluted stack we had created, and also unsure about its stability. The Heroku instance,
+        in particular, bothered me. When a free Heroku instance is not visited after a certain amount of time, it essentially goes to
+        sleep, and wakes up when it's next visited. However, I've observed this "wake up" take a <em>long time</em>, so long that it
+        seemed to have crashed or 404'd.
+    </p>
+
+    <p>
+        Thus, I decided to scrap OpenCV in favor of a client-side face-recognition library. I also moved the app to a
+        personal web server of mine, so I wouldn't have to worry about Heroku's perceived performance inconsistency. These two changes
+        meant less software and less hardware to maintain (awesome!). I now only had to think about client-side programming.
+        The changes also made for a much faster app (more awesome!).
+    </p>
+
+    <h4 class="section-header">Final Thoughts</h4>
+
+    <p>
+        I was really proud of the original hack, but perhaps didn't want to admit that it may have been over-engineered.
+    </p>
+
+    <p>
+        I think it's important that we be able to look back at our past work with a critical eye (but still be proud of
+        that work), and I'm glad that I was able to do so, to some extent.
+    </p>
+
+    <p>
+        (Kudos to Calvin Chan, Emi Nietfield, and Anthony Su for being awesome teammates)
+    </p>
 </div>
 
 <?php
