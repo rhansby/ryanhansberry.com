@@ -48,6 +48,10 @@
     float: right;
 }
 
+#main #resume-footer p {
+    margin: 0;
+}
+
 @media (max-width: 920px) {
     .resume-column {
         float: none;
@@ -78,7 +82,8 @@
             text-align: left;
         }
 
-    #resume-footer p {
+    #main #resume-footer p {
+        margin: auto;
         text-align: center;
     }
 }
