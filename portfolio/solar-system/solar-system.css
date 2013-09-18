@@ -1,3 +1,7 @@
+#main, #main h3, #main h4 {
+    font-family: "Orbitron", "museo-sans", Georgia, Helvetica, sans-serif;
+}
+
 #canvas {
     background: #111;
     -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
@@ -16,9 +20,14 @@ p#info {
     margin-bottom: 20px;
     text-align: center;
 }
-    #fine-print {
+    .fine-print {
         color: #888;
     }
+
+#main h3 {
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+}
 
 #main h4 {
     margin-top: 30px;

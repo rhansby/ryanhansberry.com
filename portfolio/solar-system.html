@@ -3,6 +3,7 @@
 include '../template.php';
 
 $additional_css = '
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Orbitron">
     <link rel="stylesheet" href="/portfolio/solar-system/solar-system.css">
 ';
 
@@ -11,10 +12,16 @@ print_header('portfolio', 'WebGL Solar System', $additional_css);
 ?>
 
 <div id="main">
+    <h3>- Solar System -</h3>
+
     <p id="info">
         move your mouse across the canvas to rotate the solar system
         <br>
-        <span id="fine-print">(this experiment works best in desktop webkit browsers)</span>
+        <span class="fine-print">this experiment works best in modern desktop browsers</span>
+        <br>
+        <span class="fine-print">
+            using safari? <a href="https://discussions.apple.com/thread/3300585?start=0&tstart=0">enable webgl</a> first
+        </span>
     </p>
 
     <div id="canvas">

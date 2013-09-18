@@ -143,8 +143,8 @@ $(document).ready(function() {
 
     var mouseX = 0, mouseY = 0;
     document.getElementById('canvas').addEventListener('mousemove', function(event) {
-        mouseX = event.offsetX;
-        mouseY = event.offsetY;
+        mouseX = event.clientX;
+        mouseY = event.clientY;
     }, false);
 
     var render = function () {
