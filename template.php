@@ -81,7 +81,7 @@ function print_header($active_page, $page_title = '', $additional_css = '')
 
                     $nav_links = array(
                         "Home" => "/index.html",
-                        "Resume" => "/resume.html",
+                        "Resumé" => "/resume.html",
                         "Portfolio" => "/portfolio.html",
                         "Blog" => "/blog.html",
                     );
