@@ -18,3 +18,15 @@
     margin-top: 15px;
     text-align: center;
 }
+
+@media (max-width: 699px) {
+    .pic-wrapper img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 499px) {
+    .pic-wrapper img {
+        width: 80%;
+    }
+}
