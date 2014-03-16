@@ -42,7 +42,7 @@ header {
         text-decoration: none;
     }
     header h1, header h2 {
-        margin: 5px;
+        margin: 5px 0;
         font-family: "museo-slab", Georgia, serif;
         font-weight: 100;
         color: grey;
@@ -196,10 +196,22 @@ footer {
         margin: 1em auto;
     }
 
+    #main .article-pic#strawberry {
+        background-size: 200px 200px;
+        width: 200px;
+        height: 200px;
+    }
+
     nav ul li {
-        margin-right: 25px;
+        margin-right: 20px;
     }
         nav ul li:last-child {
             margin-right: 0;
         }
+}
+
+@media (max-width: 320px) {
+    nav ul li {
+        margin-right: 8px;
+    }
 }
