@@ -17,3 +17,19 @@
 .work p {
     text-align: center;
 }
+
+.work-vertical-divider {
+    display: none;
+}
+
+@media (max-width: 699px) {
+    .work {
+        float: none;
+        width: auto;
+        margin: 30px 0 30px;
+    }
+
+    .work-vertical-divider {
+        display: block;
+    }
+}
