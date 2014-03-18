@@ -1,3 +1,7 @@
+#main .article-pic#doge-card {
+    background-image: url("/img/blog/doge-card.jpg");
+}
+
 #main .article-pic#solar-system {
     background-image: url("/img/blog/solar-system.jpg");
 }
@@ -16,4 +20,19 @@
 
 #main .article-pic#game-of-life-pic {
     background-image: url("/img/blog/game-of-life.jpg");
+}
+
+.pic-wrapper img {
+    border: 12px solid white; /*shake it like a polaroid*/
+    -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+       -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+#main .pic-wrapper p {
+    font-size: 12pt;
+    margin-top: 15px;
+    text-align: center;
 }
