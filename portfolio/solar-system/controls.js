@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('#panel-' + id).show('fast');
     });
 
-    $('.slider').change(function() {
+    $('.slider').on('input', function() {
         var val = $(this).val();
         var id = $(this).data('slider-value-target');
         $('#slider-value-' + id).text(val);
