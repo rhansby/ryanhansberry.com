@@ -6,6 +6,9 @@
     float: left;
     width: 33%;
 }
+    .work:nth-child(3n) {
+        clear: left;
+    }
 
 .work img {
     border-radius: 50%;
