@@ -177,7 +177,6 @@ var markers = L.markerClusterGroup();
 var geoJsonLayer = L.geoJson(geoJsonData, {
     onEachFeature: function(feature, layer) {
         var date = feature.properties.date;
-        // var dateString = date.getMonth() + ' ' + date.getDate() + ' ' + date.getFullYear() + ', ' + date.getHours() + ':' + date.getMinutes();
         var dateString = date.toDateString().substring(3);
 
         layer.bindPopup(feature.properties.address + '<br>' + dateString + ', ' + date.toLocaleTimeString());
