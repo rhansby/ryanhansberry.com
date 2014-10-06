@@ -5,9 +5,6 @@
 }
 
 /* Override default colors: */
-.marker-cluster-small, .leaflet-oldie .marker-cluster-small  { background-color: rgba(241, 220, 87, 0.6); }
-.marker-cluster-small div, .leaflet-oldie .marker-cluster-small div { background-color: rgba(240, 210, 12, 0.6); }
-
 .marker-cluster-medium, .leaflet-oldie .marker-cluster-medium  { background-color: rgba(255, 80, 77, 0.8); }
 .marker-cluster-medium div, .leaflet-oldie .marker-cluster-medium div {
     background-color: rgba(240, 100, 100, 0.8);

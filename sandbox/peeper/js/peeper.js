@@ -172,7 +172,7 @@ var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 
 var map = L.map('map').addLayer(tiles);
 
-var markers = L.markerClusterGroup();
+var markers = L.markerClusterGroup({singleMarkerMode: true});
 
 var geoJsonLayer = L.geoJson(geoJsonData, {
     onEachFeature: function(feature, layer) {
