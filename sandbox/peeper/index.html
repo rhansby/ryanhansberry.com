@@ -19,7 +19,9 @@
         <link rel="stylesheet" href="http://dailybruin.com/css/app-responsive.css?ver=1384982172">
         <link rel="stylesheet" href="http://audio.css?ver=3.9.2">
 
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+        <link rel="stylesheet" href="css/marker-cluster.css">
+        <link rel="stylesheet" href="css/marker-cluster-default.css">
 
         <link rel="stylesheet" href="css/peeper.css">
     </head>
@@ -234,6 +236,7 @@
                         <div class="row" id="single-post">
                             <!-- Ryan TODO content goes here -->
                             <div id="map"></div>
+                            <input id="date-slider" type="range" min="0" max="27" value="27" style="display:none;">
                         </div><!-- end div#single-post -->
 
                         <span style="width:100%;display:block;clear:both;"></span>
@@ -412,6 +415,7 @@
             <!-- /db -->
 
             <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+            <script src="js/marker-cluster.js"></script>
             <script src="js/peeper.js"></script>
     </body>
 </html>
