@@ -1,3 +1,7 @@
+#main .article-pic#leap-gamepad {
+    background-image: url("/img/blog/leap-gamepad.jpg");
+}
+
 #main .article-pic#doge-card {
     background-image: url("/img/blog/doge-card.jpg");
 }

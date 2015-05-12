@@ -1,0 +1,9 @@
+.video-wrapper iframe, .video-wrapper video {
+    display: block;
+    margin: 50px auto;
+}
+
+.pic-wrapper img {
+    max-width: 400px;
+}
+

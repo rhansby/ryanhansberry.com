@@ -1,0 +1,94 @@
+<?php
+
+include '../template.php';
+
+$additional_css = '
+    <link rel="stylesheet" href="/blog/leap-gamepad/leap-gamepad.css">
+';
+
+print_header('blog', 'Leap Gamepad', $additional_css);
+
+?>
+
+<div id="main">
+    <h4>April 6, 2015</h4>
+    <h3>Leap Gamepad</h3>
+    <hr>
+
+    <div class="article-pic" id="leap-gamepad">
+    </div>
+
+    <p>
+        This past weekend, two friends and I attended <a href="http://lahacks.com/">LA Hacks</a>, and created an application
+        that uses the <a href="https://www.leapmotion.com/">Leap Motion</a> to control first-person shooter games, like <a href="http://store.steampowered.com/css">Counter Strike</a>.
+        We called it Leap Gamepad.
+    </p>
+
+    <p>
+        Below is a demo video of Leap Gamepad in action:
+    </p>
+
+    <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DYLsE7Klp_I" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p>
+        <a href="https://github.com/rhansby/leap-gamepad">You can also check out the project on  Github</a>.
+    </p>
+
+    <p>
+        We used a Leap Motion and its JavaScript SDK to build the application in Node.js. The application is essentially a local
+        Node server that listens for Leap data, interprets and analyzes it, and synthesizes raw mouse and keyboard events in the
+        host operating system to control the running FPS game.
+    </p>
+
+    <a href="https://instagram.com/p/1Fj2eaBSbI/?taken-by=rhansby">
+        <div class="pic-wrapper">
+            <img src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11111420_640356426094982_1702543245_n.jpg">
+            <p>The boyz take LA Hacks 2015.</p>
+        </div>
+    </a>
+
+    <p>
+        The most difficult part of the project was getting everything working together initially -- all three of us feared
+        that Leap data might be janky, that Node would not be performant enough to handle this task, or that we would not be able
+        to sufficiently emulate operating system events. However, Leap Motion data proved to be surprisingly good, Node kept up, and
+        with the help of the excellent <a href="https://github.com/octalmage/robotjs">robot.js</a> we could emulate mouse events. We created
+        a working prototype within the first 12 to 14 hours of LA Hacks.
+    </p>
+
+    <a href="/blog/leap-gamepad/lahacks.jpg">
+        <div class="pic-wrapper">
+            <img src="/blog/leap-gamepad/lahacks.jpg">
+            <p>LA Hacks 2015 Keynote</p>
+        </div>
+    </a>
+
+    <p>
+        The video below shows our first buggy prototype. You may notice it doesn't pick up a lot of "trigger pulls."
+    </p>
+
+    <div class="video-wrapper">
+        <video width="320" height="480" autoplay muted loop>
+            <source src="/blog/leap-gamepad/prototype.mov">
+            <source src="/blog/leap-gamepad/prototype.mp4">
+        </video>
+    </div>
+
+    <p>
+        We spent the rest of our time fine tuning the prototype -- removing mouse jitter, making gesture recognition consistent,
+        and removing bugs. Ultimately, we ended with a finely tuned product with a few, but great features.
+    </p>
+
+    <p>
+        This ended up being my favorite hackathon because 1) we ended up with a solid project that works robustly, and 2)
+        we got a great response from other people. Many people came up to us while we were working to play with it, and our table
+        was consistently swarmed during demo time (unfortunately I didn't take any pictures).
+    </p>
+</div>
+
+<?php
+
+print_footer();
+
+?>
