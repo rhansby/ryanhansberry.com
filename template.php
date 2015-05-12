@@ -111,7 +111,7 @@ function print_footer($additional_js = '')
         </div> <!--/container-->
 
         <footer>
-            &copy; 2013, Ryan Hansberry
+            &copy; 2015, Ryan Hansberry
             <br>
             reach me at <a href="mailto:rhansby@gmail.com">rhansby@gmail.com</a>
         </footer>
