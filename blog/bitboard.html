@@ -1,0 +1,91 @@
+<?php
+
+include '../template.php';
+
+$additional_css = '
+    <link rel="stylesheet" href="/blog/bitboard/bitboard.css">
+';
+
+print_header('blog', 'BitBoard', $additional_css);
+
+?>
+
+<div id="main">
+    <h4>June 12, 2015</h4>
+    <h3>BitBoard: A Web App for Collaborative Drawing</h3>
+    <hr>
+
+    <div class="article-pic" id="bitboard">
+    </div>
+
+    <h4 class="section-header">Background</h4>
+
+    <p>
+        BitBoard is a collaborative "digital whiteboard" web application that combines the advantages of the visual real estate
+        of computer monitors and the fidelity of mobile device touch input. In short, BitBoard allows
+        teams to collaboratively draw on a digital canvas on any device.
+    </p>
+
+    <p>
+        You (and friends) can <a href="http://bitboard.ryanhansberry.com">try it out here</a>,
+        or <a href="https://github.com/CS130-BitBoard/BitBoard">check out the github page</a>.
+    </p>
+
+    <p>
+        Below is a demo video of BitBoard in action:
+    </p>
+
+    <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TnXiUrqe-XE" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p>
+        BitBoard was developed as a quarter-long project for the CS130 (Software Engineering) course at UCLA, in Spring Quarter 2015.
+        My partners and I are all proud of the resulting project, and I wanted to discuss the application featues which I think are the most unique,
+        and that I think would be useful in other tools.
+    </p>
+
+    <h4 class="section-header">Unique Features</h4>
+
+    <p>
+        My favorite feature (which I implemented) is being able to see the screen bounds of a mobile user on a desktop view
+        (notice that the iPhone's screen bounds are overlaid on the left desktop's view):
+    </p>
+
+    <div class="video-wrapper">
+        <video autoplay muted loop>
+            <source src="bitboard/bounds.webm">
+            <source src="bitboard/bounds.mp4">
+        </video>
+    </div>
+
+    <p>
+        Another cool feature is BitBoard's boards' "infinite" nature; if a user draws close to a board's boundaries,
+        the board will dynamically resize:
+    </p>
+
+    <div class="video-wrapper">
+        <video autoplay muted loop>
+            <source src="bitboard/dynamic.webm">
+            <source src="bitboard/dynamic.mp4">
+        </video>
+    </div>
+
+    <p>
+        (This feature does display some small aberrations but for the most part works fairly well)
+    </p>
+
+    <h4 class="section-header">Final Thoughts</h4>
+
+    <p>
+        BitBoard was one of my last (and largest) projects at UCLA, and I believe one of my best.
+        I of course want to also acknowledge my project partners' hard work in the course of creating this game.
+        You can find their names on the <a href="https://github.com/CS130-BitBoard/BitBoard">Github page</a>.
+    </p>
+</div>
+
+<?php
+
+print_footer();
+
+?>

@@ -1,3 +1,7 @@
+#main .article-pic#bitboard {
+    background-image: url("/img/blog/bitboard.jpg");
+}
+
 #main .article-pic#leap-gamepad {
     background-image: url("/img/blog/leap-gamepad.jpg");
 }
